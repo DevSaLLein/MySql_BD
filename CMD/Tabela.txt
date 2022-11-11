@@ -1,0 +1,49 @@
+/* 
+    A C E S S A N D O => { 
+        cd C:\xampp\mysql\bin;
+    };
+*/
+
+/*
+    A C E S A N D O  O  N O S S O  S G B D => {
+        mysql -u root -p;
+    };
+*/
+
+/* 
+
+    C R I A N D O  U M  B A N C O  D E  D A D O S => {
+        CREATE database DevSaLLein;
+    };
+*/
+
+/* 
+
+    A C E S A N D O  O  B A N C O  D E  D A D O S => {
+        USE DevSaLLein;
+    };
+*/
+
+/* 
+    C R I A N D O  U M A  T A B E L A => {
+        CREATE TABLE funcionario(
+            id_funcionario auto incremet,
+            name_funcionario not null,
+            primary key(id_funcionario)
+        );
+    };
+*/
+
+/* 
+	A L T E R A N D O   U M   A T R I B U T O  D A  T A B L E => {
+		ALTER TABLE alunos CHANGE nome name varcharI(50)
+		
+		Table: diz qual tabela iremos utilizar;
+		change: diz que mudaremos algo na tabela;
+		nome: o nome antigo;
+		name: o nome novo;
+		varchar(50): 
+		
+	}
+*/
+

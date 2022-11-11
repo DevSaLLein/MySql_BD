@@ -1,0 +1,15 @@
+cd C:\xampp\mysql\bin;
+msql -u root -p;
+
+CREATE DATABASE Biblioteca;
+USE  Biblioteca;
+
+CREATE table livros(
+	código int(8) PRIMARY KEY AUTO_INCREMENT,
+	título varchar(40) NOT NULL,
+	autor varchar(50) NOT NULL,
+	editora varchar(20),
+	edição int(2)
+);
+
+

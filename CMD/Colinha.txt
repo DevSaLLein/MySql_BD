@@ -1,0 +1,82 @@
+/* 
+    A C E S S A N D O => { 
+        cd C:\xampp\mysql\bin;
+    };
+*/
+
+/*
+    A C E S A N D O  O  N O S S O  S G B D => {
+        mysql -u root -p;
+    };
+*/
+
+/* 
+
+    C R I A N D O  U M  B A N C O  D E  D A D O S => {
+        CREATE database DevSaLLein;
+    };
+*/
+
+/* 
+
+    A C E S A N D O  O  B A N C O  D E  D A D O S => {
+        USE DevSaLLein;
+    };
+*/
+
+/* 
+    C R I A N D O  U M A  T A B E L A => {
+        INSERT TABLE funcionario(
+            id_funcionario auto incremet,
+            name_funcionario not null,
+            primary key(id_funcionario)
+        );
+    };
+*/
+
+/* 
+	M A N I PU L A N D O  U M  A T R I B U T O  D E  U M A  T A B E L A => {
+
+				[ADD]
+		ALTER table funcionario add idadoe int(3) not null;
+		ADD: adiciona um novo atributo;
+ 		[idadoe int(3) not null]: São suas respectivas caracteríticas;
+
+				-OPCIONAIS no  ADD-
+		FIRST: diz que iremos por esse novo;
+		AFTER [nome de um atributo]
+		{ depois de tal atributo}
+
+				[CHANGE]	
+		ALTER table funcionario CHANGE idadoe idade int(3) not null;
+		CHANGE: vamos alterar algo
+		idadoe: nome antigo;
+		idade: novo nome;
+
+				[DROP]
+		ALTER  table funcionario DROP idade;
+		DROP table funcionario;
+	}	
+*/
+
+/* 
+	D I F F  D E  D R O P  E  D E L E T E => {
+		
+		DROP: p/ excluir estruturas de dado;
+		DELETE: P/ excluir registros;
+	}
+
+*/
+
+/* 
+	C O L O C A N D O  V A L O R E S  N O S  T U P L A S => {
+		INSERT INTO funcionario values
+			('', 'Gabriel', 25);
+	}
+	
+	V E N D O  O  Q U E  H Á  D E N T R O  D A S  T U P L A S => {
+		SELECT * from funcionario;
+	}  
+
+*/
+
