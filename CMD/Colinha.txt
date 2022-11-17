@@ -56,6 +56,46 @@
 				[DROP]
 		ALTER  table funcionario DROP idade;
 		DROP table funcionario;
+
+				[UPTADE]
+
+		UPDATE produtos set name_funcionario= 'Isaac' WHERE id_funcionario = 666;
+		where: Onde;
+		set: Setar;
+
+				[DELETE]
+		DELETE  from funcionario WHERE id_funcionario = 666;
+
+				[MAX]
+		> Pega o Máximo de algo;
+		select max(nome_funcionario),max(idade) from funcionario;
+							^^^^^^^^^^^^^^^^^
+							     Tabela
+
+				[MIN]
+		> Pega o Mínimo de algo;
+		select min(nome_funcionario),min(idade) from funcionario;
+							^^^^^^^^^^^^^^^^^
+							     Tabela
+
+				[SUM]
+		> Soma algo;
+		select sum(idade) as SOMA from funcionario;
+ 				     ^^^^
+				    Apelido
+
+				[AVG]
+		> Média de algo;
+		select sum(idade) as media from funcionario;
+				     ^^^^
+				    Apelido
+
+				[COUNT]
+		> Conta algo;
+		select count(id_funcionario) as TODOS_FUNCIONARIOS from funcionario;
+						^^^^^^^^^^^^^^^^^^
+						     Apelido
+
 	}	
 */
 
@@ -77,6 +117,13 @@
 	V E N D O  O  Q U E  H Á  D E N T R O  D A S  T U P L A S => {
 		SELECT * from funcionario;
 	}  
+
+*/
+
+
+/* 
+	
+
 
 */
 
