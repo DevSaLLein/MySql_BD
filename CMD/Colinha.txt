@@ -116,6 +116,40 @@
 	
 	V E N D O  O  Q U E  H Á  D E N T R O  D A S  T U P L A S => {
 		SELECT * from funcionario;
+
+
+	
+
+			D I F E R E N T E  D E  A L G O => {
+				    <>
+
+				select nome, sexo, estado from pacientes where estado <> 'CE';
+			}
+
+			 M A I O R  Q U E OU  M E N O R  Q U E => {
+				select nome, idade from pacientes where idade < 40;
+				select nome, idade from pacientes where idade > 60;
+			}
+
+			 E N T R E  A L G U M A  C O I S A => {
+				select * from pacientes where idade between 20 and 30;
+
+
+					<NEGAÇÃO>
+				select * from pacientes where idade not between 20 and 30;
+			}
+
+			 U M A  L E T R A  E M  E S P E C Í F I C O => {
+
+				 select * from pacientes where nome like 'M%';
+				% = Pode vir qualquer coisa após o 'M';	
+
+				 select * from pacientes where nome like '%Costa';
+				% = Aqui onde se termina com 'Costa';
+
+				select * FROM pacientes where nome like '%Z%';
+				% = Em qualquer lugar;
+			}
 	}  
 
 */
